@@ -1,0 +1,30 @@
+# Keep local source & build files private (distribution MSIX package only on Git)
+Launch_LvFpsBoost.bat
+index.html
+LvFpsBoost.ico
+lv_bg.jpg
+lv_logo.png
+*.ps1
+*.exe
+*.lnk
+*.log
+*.tmp
+*.bak
+scratch/
+node_modules/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Secrets, API keys & OAuth credentials (never committed or exposed)
+*secret*
+*client_secret*
+*oauth*
+*.credentials
+*.env
+*.env.*
+*.key
+*.pem
+credentials.json
+client_secret*.json
+logo_120x120.png

@@ -1,0 +1,11 @@
+﻿{
+    "version":  "3.0.0",
+    "buildDate":  "2026-11-12",
+    "msixFile":  "FPSBoost_v3.0.0.msix",
+    "msixSizeBytes":  1306782,
+    "msixSha256":  "5e4539d9d47c9535c3e3e9f40905c7eddc356c1c9563a09173051b140a3650f9",
+    "certFile":  "FPSBoost_Cert.cer",
+    "certThumbprint":  "52A27056F81BF6514543D34858081B8A0A9315B2",
+    "signer":  "CN=LeVraisJay",
+    "readOnlyPackage":  true
+}
