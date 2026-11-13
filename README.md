@@ -1,12 +1,12 @@
-# FPS Boost v3.0.0 — Application Windows 10 / 11
+# FPS Boost v3.0 (v3.0.24) — Suite d'Optimisation PC, Gaming & Cyber-Défense
 
-Application desktop signée numériquement d'optimisation système, télémétrie matérielle 100% temps réel, lab réseau, bouclier Anti-DDoS et centre de mises à jour pour **Windows 10 & Windows 11 (64-bit)**.
+Application desktop signée numériquement d'optimisation système de niveau noyau, télémétrie matérielle 100% temps réel, débridage gaming, optimiseur de stream en direct et bouclier Anti-DDoS complet pour **Windows 10 & Windows 11 (64-bit)**.
 
-> **Distribution officielle uniquement (package MSIX signé SHA-256)** — L'application s'installe dans le conteneur système protégé Windows (`WindowsApps`) et son intégrité cryptographique est vérifiée avant chaque installation.
+> **Distribution officielle signée (package MSIX SHA-256)** — L'application s'installe dans le conteneur système protégé Windows (`WindowsApps`) et son intégrité cryptographique est vérifiée avant chaque installation.
 
 ---
 
-## Installation (Tout PC Windows)
+## Installation en 1 Clic (Tout PC Windows 10 / 11)
 
 1. Téléchargez le dépôt (**Code -> Download ZIP** et extrayez le dossier) ou clonez-le :
    ```bash
@@ -18,19 +18,47 @@ Application desktop signée numériquement d'optimisation système, télémétri
    - Le déblocage des fichiers téléchargés ;
    - L'installation du certificat officiel **`FPSBoost_Cert.cer`** (`CN=LeVraisJay`) ;
    - La vérification cryptographique de la signature SHA-256 de **`FPSBoost_v3.0.0.msix`** ;
-   - L'installation de **FPS Boost** dans le Menu Démarrer Windows (et commande `fpsboost.exe`).
+   - L'installation de **FPS Boost** dans le Menu Démarrer Windows (accessible également via la commande `fpsboost.exe`).
 
 ---
 
 ## Fonctionnalités Clés
 
-- **Télémétrie Temps Réel Synchronisée** : CPU global & par cœur (`C0..C31`), Turbo GHz, GPU NVIDIA/AMD/Intel (64-bit VRAM, horloges, températures), RAM exacte (`Utilisée + Libre`), SSD/NVMe (santé + température IOCTL directe), réseau & ping ICMP/jitter.
-- **Optimiseur Système & Analyseur de Goulot** : Mode Jeu, HAGS, Timer noyau `0.5 ms`, Profils **Esports 0-Latence**, Purge Standby RAM & Auto-Boost jeu actif.
-- **Processus Pro & Réseau Anti-DDoS** : Priorités & affinité CPU persistantes, EcoQoS Win32, Sonde MTU, Benchmark DNS, Pare-feu & **Mode Bunker**.
-- **Centre de Mises à Jour Live** : Contrôle SHA-256, suivi version GitHub et scanner/installeur de mises à jour PC via **Winget** en temps réel.
+### ⚡ 1. Élévation Administrateur Automatique
+- Auto-élévation transparente via le lanceur natif Windows (`LvFpsBoost.exe`) et le moteur d'exécution : tous les réglages noyau (Registre HKLM, plans d'énergie, services système, pare-feu) s'appliquent immédiatement sans nécessiter de clic droit manuel.
+
+### 🚀 2. Débridage Gaming & Optimisation Noyau 100% Réelle
+- **Purge RAM Standby Native (ISLC)** : Libération instantanée de gigaoctets de mémoire inactive via `NtSetSystemInformation` (`SeProfileSingleProcessPrivilege`).
+- **Timer Noyau Haute Précision** : Verrouillage à **0.500 ms** (`[LvCpuHelper]::SetTimerHalfMs()`) pour éliminer la latence d'entrée et les micro-saccades en jeu.
+- **MMCSS Gaming & Priorité Réseau** : `SystemResponsiveness = 0` (100% CPU alloué au jeu/stream) et `NetworkThrottlingIndex = 0xFFFFFFFF` (zéro gigue réseau).
+- **Débridage TCP / Réseau** : `TcpAckFrequency = 1` et `TCP_NODELAY = 1` sur cartes réseau physiques actives.
+- **Plan d'Alimentation Ultimate Performance** : Fréquence maximale du processeur et débridage des cœurs (Core Unparking).
+
+### 🎙️ 3. Optimiseur Live Streaming Temps Réel
+- Détection et priorisation instantanée des encodeurs : **TikTok LIVE Studio**, **OBS Studio (64-bit)**, **Streamlabs Desktop** et **Discord**.
+- Priorité CPU Haute (`Real-Time / High`) et `IoPriority` maximale.
+- Mode MMCSS Pro Audio & Capture avec `NoLazyMode = 1` pour supprimer les désynchronisations audio/vidéo en plein direct.
+
+### 🛡️ 4. Bouclier Anti-DDoS Cyber HUD & Atténuation en Direct
+- **Bannière Radar Cybernétique** : Indicateur de menace en direct (`SÉCURISÉ`, `MODE BUNKER`, `SURVEILLANCE`, `ALERTE FLOOD`).
+- **12 Boucliers Noyau & Pare-feu** :
+  1. *Anti-SYN Flood (Niveau 2)* : `SynAttackProtect = 2` + `TcpMaxHalfOpen = 500`.
+  2. *Filtre Anti-UDP Flood & Réflexion* : Blocage des ports d'amplification DDoS entrants (17, 19, 123, 137, 138, 1900, 3702, 5353).
+  3. *Anti-Ping Flood (Furtif)* : Blocage des échos ICMPv4/v6 (PC 100% invisible aux scanners externes).
+  4. *Anti-Smurf & Land Attack* : `DisableIPSourceRouting = 2` + blocage spoofing loopback/broadcast.
+  5. *Verrouillage Ports Sensibles* : Fermeture des ports SMB (445), RPC (135), RDP (3389), WinRM.
+  6. *Pare-feu Strict* : Blocage entrant par défaut sur tous les profils (Public, Privé, Domaine).
+  7. *Anti-ARP Poisoning & Redirections* : `EnableICMPRedirect = 0` et `NoNameRelease = 1`.
+  8. *Anti-Fuite IP WebRTC* : Désactivation des tunnels Teredo, 6to4, ISATAP et SSDP.
+  9. *DNS Chiffré DoH* : Enforce Cloudflare 1.1.1.1 / Google 8.8.8.8 avec désactivation LLMNR.
+  10. *Mode Bunker Instantané* : Forteresse verrouillant tous les ports critiques en 1 clic.
+  11. *Defender Protection Réseau* : Blocage des C2 / IPs malveillantes botnet.
+  12. *Exploit Guard & LSASS PPL* : Durcissement mémoire ASLR/DEP et protection anti-dump LSASS.
+- **Détecteur de Flood Réseau & Blocage d'IP Direct** : Surveillance continue des connexions distantes et blocage d'IP malveillante dans le Pare-feu Windows.
+- **Purge Tables & Sockets** : Vidage instantané du cache DNS, des tables ARP (`arp -d *`) et NetBIOS.
 
 ---
 
 ## Prérequis
 - Windows 10 ou Windows 11 (64-bit)
-- Droits Administrateur requis lors de l'installation du certificat/MSIX et des tweaks système
+- Droits Administrateur lors de l'exécution (auto-gérés par l'application)
