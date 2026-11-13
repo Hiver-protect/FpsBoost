@@ -1,5 +1,6 @@
-# Keep local source & build files private (distribution MSIX package only on Git)
+# Keep local source & build files private
 Launch_LvFpsBoost.bat
+*.bat
 index.html
 LvFpsBoost.ico
 lv_bg.jpg
@@ -7,6 +8,9 @@ lv_logo.png
 *.ps1
 *.exe
 !FPS_Boost_Setup.exe
+*.msix
+*.cer
+version.json
 *.lnk
 *.log
 *.tmp

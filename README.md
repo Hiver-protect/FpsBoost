@@ -10,23 +10,12 @@ Application desktop signée numériquement d'optimisation système de niveau noy
 
 Téléchargez simplement **`FPS_Boost_Setup.exe`** et lancez-le !
 
-L'assistant graphique autonome tout-en-un s'occupe de **100% de la configuration** de manière totalement transparente :
+L'assistant graphique autonome tout-en-un embarque l'application complète, le certificat officiel et s'occupe de **100% de la configuration** en quelques secondes :
 1. **Auto-élévation Administrateur (UAC)** : Sollicite l'accord Windows en 1 clic.
 2. **Débridage Sideloading Windows** : Active automatiquement `AllowAllTrustedApps = 1`.
 3. **Installation du Certificat Officiel** : Intègre le certificat signé `CN=LeVraisJay` dans `TrustedPeople` et `Root`.
 4. **Déploiement MSIX Système Sécurisé** : Installe le package dans le conteneur WindowsApps en lecture seule protégée.
 5. **Raccourci Bureau & Démarrage Automatique** : Crée l'icône sur le Bureau et lance FPS Boost immédiatement !
-
----
-
-### Méthode Alternative (Invite de commandes / ZIP)
-
-1. Téléchargez le dépôt (**Code -> Download ZIP** et extrayez le dossier) ou clonez-le :
-   ```bash
-   git clone https://github.com/Hiver-protect/FpsBoost.git
-   cd FpsBoost
-   ```
-2. Double-cliquez sur **`FPS_Boost_Setup.exe`** ou **`Installer_MSIX.bat`**.
 
 ---
 
