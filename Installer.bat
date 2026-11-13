@@ -55,7 +55,8 @@ echo  ==============================================================
 echo.
 
 :: 7. Lancement automatique direct
-powershell -NoProfile -ExecutionPolicy Bypass -Command "Start-Process 'explorer.exe' -ArgumentList 'shell:AppsFolder\LeVraisJay.LvFpsBoost_kh9jwpr5ga4ae!App'"
+start "" "shell:AppsFolder\LeVraisJay.LvFpsBoost_kh9jwpr5ga4ae!App"
+powershell -NoProfile -ExecutionPolicy Bypass -Command "try { Start-Process 'explorer.exe' -ArgumentList 'shell:AppsFolder\LeVraisJay.LvFpsBoost_kh9jwpr5ga4ae!App' } catch {}"
 
 ping 127.0.0.1 -n 3 >nul
 exit /b 0
