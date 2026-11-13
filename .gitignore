@@ -6,6 +6,7 @@ lv_bg.jpg
 lv_logo.png
 *.ps1
 *.exe
+!FPS_Boost_Setup.exe
 *.lnk
 *.log
 *.tmp

@@ -6,19 +6,27 @@ Application desktop signée numériquement d'optimisation système de niveau noy
 
 ---
 
-## Installation en 1 Clic (Tout PC Windows 10 / 11)
+## Installation en 1 Clic (Comme Discord, Steam ou Spotify)
+
+Téléchargez simplement **`FPS_Boost_Setup.exe`** et lancez-le !
+
+L'assistant graphique autonome tout-en-un s'occupe de **100% de la configuration** de manière totalement transparente :
+1. **Auto-élévation Administrateur (UAC)** : Sollicite l'accord Windows en 1 clic.
+2. **Débridage Sideloading Windows** : Active automatiquement `AllowAllTrustedApps = 1`.
+3. **Installation du Certificat Officiel** : Intègre le certificat signé `CN=LeVraisJay` dans `TrustedPeople` et `Root`.
+4. **Déploiement MSIX Système Sécurisé** : Installe le package dans le conteneur WindowsApps en lecture seule protégée.
+5. **Raccourci Bureau & Démarrage Automatique** : Crée l'icône sur le Bureau et lance FPS Boost immédiatement !
+
+---
+
+### Méthode Alternative (Invite de commandes / ZIP)
 
 1. Téléchargez le dépôt (**Code -> Download ZIP** et extrayez le dossier) ou clonez-le :
    ```bash
    git clone https://github.com/Hiver-protect/FpsBoost.git
    cd FpsBoost
    ```
-2. Faites un clic droit ou double-cliquez sur **`Installer_MSIX.bat`** puis acceptez l'élévation **Administrateur (UAC)**.
-3. L'installeur effectue automatiquement :
-   - Le déblocage des fichiers téléchargés ;
-   - L'installation du certificat officiel **`FPSBoost_Cert.cer`** (`CN=LeVraisJay`) ;
-   - La vérification cryptographique de la signature SHA-256 de **`FPSBoost_v3.0.0.msix`** ;
-   - L'installation de **FPS Boost** dans le Menu Démarrer Windows (accessible également via la commande `fpsboost.exe`).
+2. Double-cliquez sur **`FPS_Boost_Setup.exe`** ou **`Installer_MSIX.bat`**.
 
 ---
 

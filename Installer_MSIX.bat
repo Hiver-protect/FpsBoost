@@ -1,7 +1,12 @@
 @echo off
 setlocal
-title Installation FPS Boost MSIX (Windows 10 / 11)
+title Installation FPS Boost (Windows 10 / 11)
 cd /d "%~dp0"
+
+if exist "%~dp0FPS_Boost_Setup.exe" (
+  start "" "%~dp0FPS_Boost_Setup.exe"
+  exit /b 0
+)
 
 set "LV_INSTALL_BAT=%~f0"
 set "LV_DIR=%~dp0"
